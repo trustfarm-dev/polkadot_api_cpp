@@ -29,6 +29,16 @@ Note that we are using c8df32 commit of sr25519 library, which is the last "veri
 ```
 sudo apt install libwebsockets-dev  libwebsocketpp-dev gnupg rng-tools 
 ```
+#### cmake upgrade >= 3.12.x
+
+refer https://askubuntu.com/a/1157132
+```
+wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | sudo apt-key add -
+sudo apt-add-repository 'deb https://apt.kitware.com/ubuntu/ bionic main'
+sudo apt update
+sudo apt install cmake
+```
+
 #### sr25519-crust 
 ```
 git clone https://github.com/Warchant/sr25519-crust
