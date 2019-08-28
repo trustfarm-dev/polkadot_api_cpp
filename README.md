@@ -26,7 +26,13 @@ sudo apt-get install doxygen python-pydot python-pydot-ng graphviz
 Note that we are using c8df32 commit of sr25519 library, which is the last "verified" at the moment. The most recent commit was breaking signature test. 
 
 ```
-sudo apt install libwebsockets-dev  libwebsocketpp-dev
+sudo apt install libwebsockets-dev  libwebsocketpp-dev gnupg rng-tools 
+```
+install keybase  https://keybase.io/docs/the_app/install_linux
+```
+curl --remote-name https://prerelease.keybase.io/keybase_amd64.deb
+sudo apt install ./keybase_amd64.deb
+run_keybase
 ```
 
 ```
