@@ -25,9 +25,18 @@ sudo apt-get install doxygen python-pydot python-pydot-ng graphviz
 ### Other dependencies: websocketpp, sr25519-crust...
 Note that we are using c8df32 commit of sr25519 library, which is the last "verified" at the moment. The most recent commit was breaking signature test. 
 
+#### websocketpp
 ```
 sudo apt install libwebsockets-dev  libwebsocketpp-dev gnupg rng-tools 
 ```
+#### sr25519-crust 
+```
+git clone https://github.com/Warchant/sr25519-crust
+cd sr25519-crust && mkdir build && cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release
+sudo make install
+```
+
 install keybase  https://keybase.io/docs/the_app/install_linux
 ```
 curl --remote-name https://prerelease.keybase.io/keybase_amd64.deb
