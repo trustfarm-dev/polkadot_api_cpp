@@ -24,6 +24,11 @@ sudo apt-get install doxygen python-pydot python-pydot-ng graphviz
 
 ### Other dependencies: websocketpp, sr25519-crust...
 Note that we are using c8df32 commit of sr25519 library, which is the last "verified" at the moment. The most recent commit was breaking signature test. 
+
+```
+sudo apt install libwebsockets-dev  libwebsocketpp-dev
+```
+
 ```
 make deps
 ```
