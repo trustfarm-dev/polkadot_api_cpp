@@ -34,6 +34,12 @@ curl --remote-name https://prerelease.keybase.io/keybase_amd64.deb
 sudo apt install ./keybase_amd64.deb
 run_keybase
 ```
+install subkey 
+```
+sudo apt install cargo
+cargo install --force --git https://github.com/paritytech/substrate subkey
+```
+
 
 ```
 make deps
